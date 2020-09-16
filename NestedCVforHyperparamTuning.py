@@ -1,5 +1,4 @@
-# code to do nested cross validation for 8 ML models: 
-# print best hyperparameters based on nested cross validation and print metrcis for each fold.
+# code to tune hyperparameters and get error metrics for 8 ML models using nested cross validation.
 # hyperparamaters are tuned on each fold and the best hyperparamaters from the fold are used to get the metrics
 
 import pandas
@@ -297,5 +296,3 @@ print('Gradient boosted regression')
 print('gbr R2', R2_results_gbr)
 print('gbr MAE', MAE_results_gbr)
 print('gbr MSE', MSE_results_gbr)
-
-
