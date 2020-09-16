@@ -18,8 +18,7 @@ from sklearn.neighbors import KNeighborsRegressor
 
 
 # import and define modern data to train model:
-filename = '/Users/annaphillips/Google Drive/GLORICH/Si_Env_Data/ModernInputData.csv'
-ModernData = pandas.read_csv(filename)
+ModernData = pandas.read_csv(filename) #read data
 X = zscore(np.array(ModernData.drop(['Stat_Id','ModernLogDSiYield'],axis = 1))) #define independnet variable
 Y = np.exp(np.array(ModernData['ModernLogDSiYield'])) #define dependent variable
 
